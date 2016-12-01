@@ -13,5 +13,4 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :shell, path: "bootstrap.sh", privileged: false
 
-  config.vm.synced_folder ".", "/vagrant", type: "nfs"
 end
